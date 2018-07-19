@@ -1,11 +1,16 @@
 dist: trusty
 sudo: false
+# .travis.yml
 language: node_js
+install:
+  - npm ci
 node_js:
   - "6.9.1"
+  # keep the npm cache around to speed up installs
 cache:
   directories:
     - "node_modules"
+    - "$HOME/.npm"
 addons:
   sonarcloud:
     organization: "merntask"
