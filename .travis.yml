@@ -1,0 +1,17 @@
+dist: trusty
+sudo: false
+language: node_js
+node_js:
+  - "6.9.1"
+cache:
+  directories:
+    - "node_modules"
+addons:
+  sonarcloud:
+    organization: "merntask"
+    token:
+      secure: "4ec7c318240a9d4ba62549864283b7ad7c4159bb"
+
+script:
+  - "npm test"
+  - "sonar-scanner"
