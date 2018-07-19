@@ -3,7 +3,7 @@ sudo: false
 # .travis.yml
 language: node_js
 install:
-  - npm ci
+  - npm install
 node_js:
   - "6.9.1"
   # keep the npm cache around to speed up installs
