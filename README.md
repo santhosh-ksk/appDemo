@@ -5,3 +5,4 @@
  - make sure MongoDB server is Running.
  - npm install - to install all the dependencies
  - npm start - to start the application
+updated
