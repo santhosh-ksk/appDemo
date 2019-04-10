@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "start": "node server/bin/www.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "author": "santhosh kumar k",
   "license": "ISC",
